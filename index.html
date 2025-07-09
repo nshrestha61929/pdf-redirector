@@ -6,7 +6,7 @@
     <script>
       window.onload = function () {
         const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-        const page = 3; // Change this to the desired page number
+        const page = 16; // Change this to the desired page number
         const basePDF = "https://www.barisolutions.com/docs/2025-Vol-01-No-1-Bariatric-Solutions-Journal.pdf";
         const redirectURL = isIOS ? `${basePDF}#page${page}` : `${basePDF}#page=${page}`;
         window.location.replace(redirectURL);
